@@ -1,0 +1,16 @@
+{
+  "user": "root",
+  "passwd": "0707",
+  "host": "127.0.0.1",
+  "port": "3306",
+  "database": "im_instance",
+  "params": {
+    "charset": "utf8mb4",
+    "parseTime": "True",
+    "loc": "Local"
+  },
+  "poolConfig": {
+    "maxIdleConns": 10,
+    "maxOpenConns": 100
+  }
+}

@@ -1,0 +1,28 @@
+.message-wrapper {
+    margin: 5px;
+    width: 98%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.timestamp {
+    text-align: center;
+    font-size: 12px;
+}
+
+.content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 3px;
+    max-width: 70%;
+    width: fit-content;
+    word-break: break-all;
+    float: right;
+}
+
+.have-read {
+    font-size: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+}

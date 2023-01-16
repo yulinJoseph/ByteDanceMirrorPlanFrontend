@@ -1,0 +1,211 @@
+html,
+body {
+    background-color: rgb(252, 238, 224);
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    transform: 0;
+}
+
+.left {
+    float: left;
+    width: 30%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+}
+
+.self-info-box {
+    height: calc(10vh);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 3%;
+    margin-left: 3%;
+    border-radius: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.name-signature {
+    box-sizing: border-box;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 3px;
+}
+
+.username {
+    margin-bottom: 1px;
+    font-weight: bolder;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.signature {
+    margin-top: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: small;
+}
+
+.contact {
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(75vh);
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.contact::-webkit-scrollbar {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 1px;
+    border-right-width: 0;
+    border-style: solid;
+    border-color: black;
+}
+.contact::-webkit-scrollbar:vertical {
+    width: 25px;
+}
+.contact::-webkit-scrollbar:horizontal {
+    height: auto;
+}
+.contact::-webkit-scrollbar-thumb {
+    border-right-width: 0;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(255, 255, 209);
+}
+
+.right {
+    background-color: white;
+    float: right;
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-right: 3%;
+    position: relative;
+    height: calc(87vh);
+}
+
+.to-info-box {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.to-avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.message-box {
+    height: calc(77vh);
+    width: 100%;
+}
+
+.recv-box {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    overflow: auto;
+    margin-top: -1px;
+    height: calc(50vh);
+}
+.recv-box::-webkit-scrollbar {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 1px;
+    border-right-width: 0;
+    border-style: solid;
+    border-color: black;
+}
+.recv-box::-webkit-scrollbar:vertical {
+    width: 25px;
+}
+.recv-box::-webkit-scrollbar:horizontal {
+    height: 0;
+}
+.recv-box::-webkit-scrollbar-thumb {
+    border-right-width: 0;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(255, 255, 209);
+}
+
+.toolbar-box {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-top: -1px;
+    height: 30px;
+    min-height: 25px;
+    justify-content: right;
+}
+
+.emoji-button {
+    border-style: none;
+    border-radius: 0;
+    height: 100%;
+    width: 60px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+}
+.emoji-button:active {
+    background-color: rgb(106, 225, 169);
+}
+
+.send-button {
+    border-style: none;
+    height: 100%;
+    width: 60px;
+    background-color: rgb(204, 204, 251);
+    float: right;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: black;
+}
+.send-button:active {
+    background-color: rgb(153, 153, 204);
+}
+
+.input-box {
+    margin-top: -1px;
+    height: calc(27vh - 30px);
+    width: 100%;
+    resize: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.input-box:focus {
+    outline: none;
+}
+
+/* 
+87vh - 10vh - 50vh - 30px
+*/

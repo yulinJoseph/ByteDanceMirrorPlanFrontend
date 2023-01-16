@@ -1,0 +1,17 @@
+.contactItem {
+    height: 75px;
+    width: calc(100%);
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    margin-top: -1px;
+}
+.contactItem::selection {
+    background-color: rgb(209, 228, 253);
+}

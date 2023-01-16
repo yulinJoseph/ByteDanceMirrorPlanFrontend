@@ -1,0 +1,15 @@
+.more-button {
+    border-style: none;
+    background-color: rgb(252, 238, 224);
+}
+
+.list-button {
+    background-color: white;
+    border-style: none;
+}
+
+.hover {
+    margin-left: 20px;
+    font-size: small;
+    color: skyblue;
+}
