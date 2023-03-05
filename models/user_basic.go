@@ -3,6 +3,7 @@ package models
 import (
 	"gorm.io/gorm"
 	"im-instance/utils"
+	"log"
 )
 
 type UserBasic struct {
@@ -16,6 +17,13 @@ type UserBasic struct {
 
 func (table *UserBasic) TableName() string {
 	return "user_basic"
+}
+
+func init() {
+	err := utils.DB.AutoMigrate(&UserBasic{})
+	if err != nil {
+		log.Fatalf("UserBasic table migrate failed, err: %+v", err)
+	}
 }
 
 func GetUserList() ([]*UserBasic, error) {

@@ -7,6 +7,7 @@ import (
 	"gopkg.in/fatih/set.v0"
 	"gorm.io/gorm"
 	"im-instance/utils"
+	"log"
 	"net"
 	"net/http"
 	"sync"
@@ -23,6 +24,13 @@ type Message struct {
 
 func (table *Message) TableName() string {
 	return "message"
+}
+
+func init() {
+	err := utils.DB.AutoMigrate(&Message{})
+	if err != nil {
+		log.Fatalf("auto migrate message table error: %+v", err)
+	}
 }
 
 func SaveMsg(message *Message) error {

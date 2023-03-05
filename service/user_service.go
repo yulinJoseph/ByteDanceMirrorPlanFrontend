@@ -175,7 +175,7 @@ func UploadAvatar(c *gin.Context) {
 		return
 	}
 
-	if err := c.SaveUploadedFile(file, fmt.Sprintf("./public/avatar/%d%s", id, ext)); err != nil {
+	if err := c.SaveUploadedFile(file, fmt.Sprintf("public/avatar/%d%s", id, ext)); err != nil {
 		fmt.Println("save file error")
 		c.JSON(http.StatusBadRequest, gin.H{
 			"success": false,

@@ -66,3 +66,7 @@ func InitMysql() {
 	sqlDB.SetConnMaxIdleTime(time.Minute)
 	sqlDB.SetConnMaxLifetime(time.Minute)
 }
+
+func init() {
+	InitMysql()
+}

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"gorm.io/gorm"
 	"im-instance/utils"
+	"log"
 )
 
 // 私聊 Type 标记为 single
@@ -19,6 +20,13 @@ type Contact struct {
 
 func (table *Contact) TableName() string {
 	return "contact"
+}
+
+func init() {
+	err := utils.DB.AutoMigrate(&Contact{})
+	if err != nil {
+		log.Fatalf("auto migrate contact table error: %+v", err)
+	}
 }
 
 func GetContactList(fromId uint) ([]*UserBasic, error) {
